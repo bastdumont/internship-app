@@ -1,0 +1,36 @@
+<div id="filterrific_results">
+
+<div class="count">
+    <%= page_entries_info contacts %>
+</div>
+
+<table>
+ <table class="table table-striped table-bordered table-hover">
+  <thead class="thead-default">
+      <th><%= filterrific_sorting_link(@filterrific, :name) %></th>
+      <th><%= filterrific_sorting_link(@filterrific, :company_id) %></th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Main contact</th>
+      <th>Owner</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= link_to(contact.name, contact) %></td>
+        <td><%= link_to(contact.company.name, contact.company) %></td>
+        <td><%= contact.email %></td>
+        <td><%= contact.phone %></td>
+        <td><%= contact.main_contact %></td>
+        <td><%= link_to(contact.user.name, contact.user) %></td>
+        <td><%= link_to 'Show', contact %></td>
+        <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
+        <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= will_paginate contacts %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Contacts</h1>
+<div class="new-object">
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <%= link_to 'New Contact', new_contact_path %>
+</button>
+</div>
+ <div class="filter-reset">
+    <button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> <%= link_to('Reset filters', reset_filterrific_url,) %>
+</button>
+  </div>
+
+<%= form_for_filterrific @filterrific do |f| %>
+  
+  <div id="position-filters">
+ <div class="filter">
+   Company
+    <%= f.select(
+      :with_company_id,
+      @filterrific.select_options[:with_company_id],
+      { include_blank: '- All -' }
+    ) %>
+  </div></div>
+  
+
+  <%# add an automated spinner to your form when the list is refreshed %>
+  <%= render_filterrific_spinner %>
+<% end %>
+
+
+<%= render(
+  partial: 'contacts/list',
+  locals: { contacts: @contacts }
+) %>
+
+
+

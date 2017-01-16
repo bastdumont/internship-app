@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  area_of_interest: MyString
+  link: MyText
+  city: MyString
+  company_id: 1
+  contact_id: 1
+  capacity: 1
+  allowance: MyString
+  hiring_opportunity: false
+  description: MyText
+  requirements: MyText
+  remarks: MyText
+  status: MyString
+  user_id: 1
+
+two:
+  name: MyString
+  area_of_interest: MyString
+  link: MyText
+  city: MyString
+  company_id: 1
+  contact_id: 1
+  capacity: 1
+  allowance: MyString
+  hiring_opportunity: false
+  description: MyText
+  requirements: MyText
+  remarks: MyText
+  status: MyString
+  user_id: 1

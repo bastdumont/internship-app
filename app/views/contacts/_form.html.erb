@@ -1,0 +1,45 @@
+<%= form_for(@contact) do |f| %>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="internship-data">
+  <div class="position-3">
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :company_id %><br>
+    <%= f.select(:company_id, Company.options_for_select) %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_area :email %>
+  </div></div>
+   <div class="position-3">
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :main_contact %><br>
+    <%= f.check_box :main_contact %>
+  </div>
+   <div class="field">
+    <%= f.label :user_id %><br>
+     <%= f.select(:user_id, User.options_for_select) %>
+  </div></div></div>
+  <div class="actions">
+    <button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <%= f.submit %>
+</button>
+  </div>
+<% end %>

@@ -1,0 +1,42 @@
+<div id="filterrific_results">
+
+<div class="count">
+    <%= page_entries_info clients %>
+</div>
+
+<table class="table table-striped table-bordered table-hover">
+  <thead class="thead-default">
+    <tr>
+      <th><%= filterrific_sorting_link(@filterrific, :name) %></th>
+      <th>Email</th>
+      <th>Skype</th>
+      <th><%= filterrific_sorting_link(@filterrific, :position_id) %></th>
+      <th><%= filterrific_sorting_link(@filterrific, :company_id) %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% clients.each do |client| %>
+      <tr>
+        <td><%= client.name %></td>
+        <td><%= client.email %></td>
+        <td><%= client.skype %></td>
+        <td><%= link_to(client.position.name, client.position) %></td>
+        <td><%= link_to(client.position.company.name, client.position.company) %></td>
+        <td><%= link_to 'Show', client %></td>
+        <td><%= link_to 'Edit', edit_client_path(client) %></td>
+        <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<%= will_paginate clients %>
+
+
+
+
+
+
+

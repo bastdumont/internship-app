@@ -1,0 +1,47 @@
+<div id="filterrific_results">
+
+<div class="count">
+    <%= page_entries_info positions %>
+</div>
+<table class="table table-striped table-bordered table-hover">
+  <thead class="thead-default">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Area of interest</th>
+      <th>Link</th>
+      <th>City</th>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Capacity</th>
+      <th>Allowance</th>
+      <th>Hiring</th>
+      <th>Status</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @positions.each do |position| %>
+      <tr>
+        <td><%= position.id %></td>
+        <td><%= link_to(position.name.truncate(20), position) %></td>
+        <td><%= position.area_of_interest %></td>
+        <td><%= link_to position.link.truncate(15), "http://#{position.link}" %></td>
+        <td><%= position.city %></td>
+        <td><%= link_to(position.company.name, position.company) %></td>
+        <td><%= link_to(position.contact.name, position.contact) %></td>
+        <td><%= position.capacity %></td>
+        <td><%= position.allowance %></td>
+        <td><%= position.hiring_opportunity %></td>
+        <td><%= position.status %></td>
+        <td><%= position.user.name %></td>
+        <td><%= link_to 'Show', position %></td>
+        <td><%= link_to 'Edit', edit_position_path(position) %></td>
+        <td><%= link_to 'Destroy', position, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= will_paginate positions %>

@@ -1,0 +1,68 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Internship Positions</h1>
+<div class="new-object">
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <%= link_to 'New Position', new_position_path %>
+</button>
+</div>
+ <div class="filter-reset">
+    <button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> <%= link_to('Reset filters', reset_filterrific_url,) %>
+</button>
+  </div>
+<%= form_for_filterrific @filterrific do |f| %>
+  
+  <div id="position-filters">
+  <div class="filter">
+   Area of Interest
+    <%= f.select(
+      :with_area_of_interest,
+      @filterrific.select_options[:with_area_of_interest],
+      { include_blank: '- All -' }
+    ) %>
+  </div>
+   <div class="filter">
+   Status
+    <%= f.select(
+      :with_status,
+      @filterrific.select_options[:with_status],
+      { include_blank: '- All -' }
+    ) %>
+  </div>
+  <div class="filter">
+  City
+    <%= f.select(
+      :with_city,
+      @filterrific.select_options[:with_city],
+      { include_blank: '- All -' }
+    ) %>
+  </div>
+  <div class="filter">
+  Owner
+    <%= f.select(
+      :with_user_id,
+      @filterrific.select_options[:with_user_id],
+      { include_blank: '- All -' }
+    ) %>
+  </div>
+  <div class="filter">
+  Company
+    <%= f.select(
+      :with_company_id,
+      @filterrific.select_options[:with_company_id],
+      { include_blank: '- All -' }
+    ) %>
+  </div>
+  </div>
+ 
+  <%# add an automated spinner to your form when the list is refreshed %>
+  <%= render_filterrific_spinner %>
+<% end %>
+
+
+<%= render(
+  partial: 'positions/list',
+  locals: { positions: @positions }
+) %>
+

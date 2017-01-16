@@ -1,0 +1,81 @@
+<%= form_for(@position) do |f| %>
+  <% if @position.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@position.errors.count, "error") %> prohibited this position from being saved:</h2>
+
+      <ul>
+      <% @position.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="internship-data">
+  <div class="position-3">
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+   <%= f.label :area_of_interest %><br>
+    <%= f.select(:area_of_interest, Position.options_for_filtered_area) %>
+  </div>
+  <div class="field">
+    <%= f.label :link %><br>
+    <%= f.text_area :link %>
+  </div></div>
+  
+  <div class="position-3">
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.select(:city, Position.options_for_cities) %>
+  </div>
+  <div class="field">
+    <%= f.label :company_id %><br>
+    <%= f.select(:company_id, Company.options_for_select) %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_id %><br>
+    <%= f.select(:contact_id, Contact.options_for_select) %>
+  </div>  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.select(:status, Position.options_for_status) %>
+  </div></div>
+  
+    <div class="position-3">
+  <div class="field">
+    <%= f.label :capacity %><br>
+    <%= f.number_field :capacity %>
+  </div>
+  <div class="field">
+    <%= f.label :allowance %><br>
+    <%= f.text_field :allowance %>
+  </div><div class="field">
+    <%= f.label :user_id %><br>
+   <%= f.select(:user_id, User.options_for_select) %>
+  </div>
+   <div class="field">
+    <%= f.label :hiring_opportunity %><br>
+    <%= f.check_box :hiring_opportunity %>
+  </div>
+  </div>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.trix_editor :description %>
+  </div>
+  <div class="field">
+    <%= f.label :requirements %><br>
+    <%= f.trix_editor :requirements %>
+  </div>
+  <div class="field">
+    <%= f.label :remarks %><br>
+    <%= f.trix_editor :remarks %>
+  </div>
+
+
+    <button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <%= f.submit %>
+</button>
+
+<% end %>

@@ -1,0 +1,2 @@
+json.extract! position, :id, :name, :area_of_interest, :link, :city, :company_id, :contact_id, :capacity, :allowance, :hiring_opportunity, :description, :requirements, :remarks, :status, :user_id, :created_at, :updated_at
+json.url position_url(position, format: :json)

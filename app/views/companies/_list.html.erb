@@ -1,0 +1,36 @@
+<div id="filterrific_results">
+
+<div class="count">
+    <%= page_entries_info companies %>
+</div>
+
+<table class="table table-striped table-bordered table-hover">
+  <thead class="thead-default">
+    <tr>
+      <th>Name</th>
+      <th>Area of interest</th>
+      <th>Status</th>
+      <th>Website</th>
+      <th>City</th>
+      <th>Adress</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @companies.each do |company| %>
+      <tr>
+        <td><%= link_to(company.name, company) %></td>
+        <td><%= company.area_of_interest %></td>
+        <td><%= company.status %></td>
+        <td><%= link_to company.website, "http://#{company.website}" %></td>
+        <td><%= company.city %></td>
+        <td><%= company.adress.truncate(27) %></td>
+        <td><%= link_to 'Show', company %></td>
+        <td><%= link_to 'Edit', edit_company_path(company) %></td>
+        <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= will_paginate companies %>
