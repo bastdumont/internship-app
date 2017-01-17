@@ -1,0 +1,714 @@
+
+---
+clients:
+  columns:
+  - id
+  - name
+  - email
+  - skype
+  - position_id
+  - created_at
+  - updated_at
+  - company_id
+  records: 
+  - - 2
+    - Aliaume Leroy
+    - aliaume@email.com
+    - aliaum
+    - 1
+    - 2017-01-11 04:55:13.000000000 Z
+    - 2017-01-13 20:12:05.000000000 Z
+    - 2
+  - - 3
+    - Matt Bonini
+    - boninimatt@gmail.com
+    - ''
+    - 1
+    - 2017-01-14 12:40:09.000000000 Z
+    - 2017-01-14 12:40:09.000000000 Z
+    - 
+
+---
+companies:
+  columns:
+  - id
+  - name
+  - area_of_interest
+  - description
+  - status
+  - website
+  - city
+  - notes
+  - adress
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Shanghaiist
+    - Journalism
+    - "<div>Lifestyle weblog about everything that happens in Shanghai.</div>"
+    - Partner
+    - www.shanghaiist.com
+    - Shanghai
+    - ''
+    - 1765 Huashan Road, Hai Si Tower Block 1, Room 1F (1 minute's walk from Exit
+      1 of Jiaotong Uni station on Lines 10/11).
+    - 2017-01-09 16:56:18.000000000 Z
+    - 2017-01-13 18:36:42.000000000 Z
+  - - 4
+    - REEFE
+    - Marketing
+    - The social and professional network for designers and makers
+    - Lead
+    - www.reefe.network/
+    - Shanghai
+    - ''
+    - ''
+    - 2017-01-12 11:31:54.000000000 Z
+    - 2017-01-12 11:31:54.000000000 Z
+  - - 5
+    - Wanshang Hao
+    - Event Management
+    - "<div>This company promotes world-class artists and spectacles in China.</div>"
+    - Lead
+    - www.wanshang-hao.com/
+    - Shanghai
+    - ''
+    - "\t晚上好 - Wanshang Hao 上海200031复兴中路1237号3楼 3/F, 1237 Middle Fuxing Lu, Xuhui
+      District, Shanghai, PRC 200031"
+    - 2017-01-13 18:50:54.000000000 Z
+    - 2017-01-13 18:50:54.000000000 Z
+  - - 6
+    - AnDe Ming
+    - International Business
+    - "<div>We were established by a British national, who has over fifteen years’
+      experience in international trade, encompassing both sales and purchasing roles
+      for multi-national companies. A graduate member of the UK Institute of Export,
+      he has been based in China since 2002, and is fluent in Mandarin Chinese. Our
+      Shanghai team comprises native speakers of English, and Mandarin Chinese, together
+      with fluency in French and Japanese. With extensive contacts across a broad
+      range of products and industries, our sourcing team has the local knowledge
+      to support our business in China</div>"
+    - Lead
+    - www.andeming.com
+    - Shanghai
+    - Purchasing agent for mostly garden equipment in England and Europe
+    - "\t107 Sinan Road, Room 1008, Shanghai. Near Tianzifang"
+    - 2017-01-13 19:10:03.000000000 Z
+    - 2017-01-13 19:10:03.000000000 Z
+  - - 7
+    - Group Mall
+    - Sales
+    - "<div><br>We are a newly born startup, based in Shanghai that operates in the
+      ecommerce space. We are a B2C online shop where users can find a multitude of
+      special offers and deals on imported and local food products. Our customers
+      are foreigners and Chinese looking for good quality products at affordable price.
+      At the current stage, we operate on a Wechat based platform, and an independent
+      website is planned to be online by the end of August. Our positioning is that
+      of a community based brand that constantly engage with people through wechat
+      groups, events and special platform’s features.</div>"
+    - Lead
+    - ''
+    - Shanghai
+    - Group Mall are part of the Chinaccelerator program. You can contact them directly
+      or through Chinaccelerator
+    - ''
+    - 2017-01-13 19:17:05.000000000 Z
+    - 2017-01-13 19:17:05.000000000 Z
+  - - 8
+    - The PTL Group
+    - Consulting
+    - "<div>This company supports foreign companies at different penetration stages
+      to setup, develop and optimize their sales and manufacturing operations in China.
+      They deal with management support of sales &amp; distribution in China, business
+      recovery in China, industrial project management &amp; manufacturing in China
+      and investments in China.</div>"
+    - Lead
+    - www.ptl-group.com
+    - Shanghai
+    - ''
+    - Zhaojiabang Road 798, Room 301, Kun Yang Plaza
+    - 2017-01-13 19:34:34.000000000 Z
+    - 2017-01-13 19:34:34.000000000 Z
+  - - 9
+    - Paragon Partners Asia
+    - Finance
+    - "<div>This company is a boutique private equity firm engaging in investments
+      with both compelling financial returns and positive social impact. Headquartered
+      in Shanghai, we specialize in cross-border technology investments. Their key
+      focus sectors are Energy, Water, Media &amp; Culture, and Health Sciences. Their
+      work includes investment, financial advisory, and consultancy.</div>"
+    - Partner
+    - www.paragonpartnersasia.com/
+    - Shanghai
+    - Paragon Partners Asia is currently looking for an intelligent, resourceful,
+      and fast-learning person to work on our growing number of projects. This person
+      will be responsible for playing key roles in the cases Paragon takes on, and
+      should have the tools to quickly assess business models and research potential
+      markets, competitors, and key statistics for businesses. This candidate should
+      be able to organize information effectively and create bilingual reports, as
+      well as assist with day-to-day administrative tasks in an efficient manner.
+      As Paragon is a growing company, this position is ideally suited for someone
+      who is looking for a fast-paced and exiting work environment with ample opportunities
+      to grow professionally.
+    - Zhaofeng World Trade Bldg, Suite 20B 369 Jiangsu Road, Shanghai, China
+    - 2017-01-13 19:42:17.000000000 Z
+    - 2017-01-13 19:42:17.000000000 Z
+  - - 10
+    - Link-People
+    - General Business
+    - "<div>LINKE Residential belongs to We-work Real Estate Agency, which is established
+      by a American entrepreneur on August, 2013. LINKE Residential is Shanghai’s
+      largest manager of shared flats in the downtown (Jing’an, People Square, Zhongshan
+      Park). We invest, renovate and rent out hundreds of apartments to young professionals
+      from all over the world. Our typical Shared apartment is 130 -150 square meters
+      and 3 to 4 bedrooms. In addition LINK Residential also offers studio’s and singles
+      in downtown Shanghai.</div>"
+    - Partner
+    - www.link-intern.com/
+    - Shanghai
+    - Only legal visa
+    - East Kangding Lu 45, Bld 5, Room 105
+    - 2017-01-13 19:57:46.000000000 Z
+    - 2017-01-13 19:57:46.000000000 Z
+
+---
+contacts:
+  columns:
+  - id
+  - name
+  - company_id
+  - email
+  - phone
+  - main_contact
+  - created_at
+  - updated_at
+  - user_id
+  records: 
+  - - 1
+    - Kenneth Tan
+    - 1
+    - Kennet.tan@shanghai.com
+    - '18621772541'
+    - true
+    - 2017-01-09 16:47:08.000000000 Z
+    - 2017-01-09 17:08:07.000000000 Z
+    - 1
+  - - 4
+    - Lea Ayoub
+    - 4
+    - l.ayoub@reefe.network
+    - ''
+    - true
+    - 2017-01-12 11:36:06.000000000 Z
+    - 2017-01-12 11:36:06.000000000 Z
+    - 1
+  - - 6
+    - "Hans\tUitdenhouwen"
+    - 5
+    - hans@wanshang-hao.com
+    - '18516124144'
+    - true
+    - 2017-01-13 18:53:05.000000000 Z
+    - 2017-01-13 18:53:05.000000000 Z
+    - 1
+  - - 7
+    - "Andy\tSmith"
+    - 6
+    - andy@andeming.com
+    - ''
+    - false
+    - 2017-01-13 19:11:05.000000000 Z
+    - 2017-01-13 19:11:05.000000000 Z
+    - 1
+  - - 8
+    - "Gianmarco\tMeli"
+    - 7
+    - gianmarco@yihaoshanghai.com
+    - ''
+    - false
+    - 2017-01-13 19:20:34.000000000 Z
+    - 2017-01-13 19:20:34.000000000 Z
+    - 1
+  - - 9
+    - Jun Peng
+    - 8
+    - jun@ptl-group.com
+    - ''
+    - true
+    - 2017-01-13 19:35:34.000000000 Z
+    - 2017-01-13 19:35:34.000000000 Z
+    - 3
+  - - 10
+    - Arie Schreier
+    - 8
+    - arie@ptl-group.com
+    - "+86-138 1782 5201"
+    - false
+    - 2017-01-13 19:36:28.000000000 Z
+    - 2017-01-13 19:36:28.000000000 Z
+    - 1
+  - - 11
+    - David Bosworth
+    - 9
+    - dbosworth@paragonpartnersasia.com
+    - "+86 138 1898 5024"
+    - true
+    - 2017-01-13 19:43:16.000000000 Z
+    - 2017-01-13 19:44:04.000000000 Z
+    - 4
+  - - 12
+    - Sandra Frankowski
+    - 10
+    - internationalhr@link-people.cn
+    - ''
+    - true
+    - 2017-01-13 19:59:04.000000000 Z
+    - 2017-01-13 19:59:04.000000000 Z
+    - 1
+
+---
+positions:
+  columns:
+  - id
+  - name
+  - area_of_interest
+  - link
+  - city
+  - company_id
+  - contact_id
+  - capacity
+  - allowance
+  - hiring_opportunity
+  - description
+  - requirements
+  - remarks
+  - status
+  - user_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Journalism Intern
+    - Journalism
+    - ''
+    - Shanghai
+    - 1
+    - 1
+    - 1
+    - 'No'
+    - false
+    - "<div>Content writing for the Shanghaiist</div>"
+    - ''
+    - "<div>Matt Bonini Until March</div>"
+    - Occupied
+    - 1
+    - 2017-01-09 16:57:12.000000000 Z
+    - 2017-01-13 20:15:26.000000000 Z
+  - - 4
+    - Marketing & Communications Executive
+    - Marketing
+    - internshipschina.com/job/52-marketing-communications-executive/
+    - Shanghai
+    - 4
+    - 4
+    - 1
+    - TBD
+    - false
+    - "<div>• Work with the team to develop and execute digital marketing initiatives
+      involving major online and mobile platforms (Facebook, Instagram, Twitter, WeChat),
+      assisting with copy, graphic, and calendar creation across all social media
+      channels&nbsp;<br><br>• Monitor social media channels, initiate conversations
+      with and respond to community comments referencing established brand and community
+      guidelines in a timely manner.&nbsp;<br><br>• Optimize social media campaigns
+      in real time by meeting content calendar deadlines&nbsp;<br><br>• Ongoing duties
+      included: monitoring campaign analytics, preparing client reports, creating
+      placement grids, and researching media influence' Requirements:&nbsp;</div>"
+    - "<div>The ideal candidate should have a passion for social media and online
+      communities, be an active participant in social networks and have a strong interest
+      for design and ongoing design trends.&nbsp;<br><br>• Social media analytics
+      experience&nbsp;<br>• Proficient with Microsoft Excel&nbsp;<br>• Experience
+      with Photoshop is a plus&nbsp;<br>• Knowledge of influencer marketing and experience
+      with influencer research&nbsp;<br>• Working knowledge of community management
+      basics&nbsp;<br>• Ability to multi-task and meet tight deadlines&nbsp;<br>•
+      Natural curiosity and a creative mindset, willing to contribute marketing ideas&nbsp;<br>•
+      Marketing majors preferred&nbsp;<br>• Fluency in Chinese and English&nbsp;</div>"
+    - "<div>Possibility of renewing.&nbsp;</div>"
+    - Open
+    - 1
+    - 2017-01-12 11:39:25.000000000 Z
+    - 2017-01-12 12:10:34.000000000 Z
+  - - 5
+    - Project Assistant
+    - Event Management
+    - ''
+    - Shanghai
+    - 5
+    - 6
+    - 1
+    - 'No'
+    - false
+    - "<div>- Assisting with artists bookings and corporate events.&nbsp;<br>- communicating
+      with agents&nbsp;<br>- event management</div>"
+    - "<div>- organized<br>- interested in the cultural industry&nbsp;<br>- languages:
+      proficient English<br>- Dutch or Chinese is a big plus</div>"
+    - "<div>This internship will give you the opportunity to learn more about the
+      Belgian and Chinese artist industry</div>"
+    - Open
+    - 3
+    - 2017-01-13 19:07:57.000000000 Z
+    - 2017-01-13 19:27:49.000000000 Z
+  - - 6
+    - Assistant Merchandiser
+    - International Business
+    - ''
+    - Shanghai
+    - 6
+    - 7
+    - 1
+    - 'No'
+    - false
+    - "<ul><li>Liason between overseas customer and Chinese&nbsp;</li><li>Follow up
+      the whole order documentation workflow</li><li>Liaise with designated forwarders,
+      and check export documentation</li><li>Keep records of current order book and
+      monitor on-time performance</li><li>research, find and visit new suppliers</li><li>monitor
+      new product developments</li><li>Visit exhibitions when required</li></ul>"
+    - "<ul><li>Fluent English</li><li>Knowledge of international trade or purchasing</li><li>Chinese
+      is a plus!</li></ul>"
+    - "<ul><li>Allowance can be organised if duration is longer.</li><li>Really good
+      learning opportunity</li><li>Cool office</li><li>Great place to practice Chinese</li></ul>"
+    - Open
+    - 3
+    - 2017-01-13 19:13:51.000000000 Z
+    - 2017-01-13 19:28:10.000000000 Z
+  - - 7
+    - Operations and Business Development Manager- Food and beverage
+    - Hospitality
+    - ''
+    - Shanghai
+    - 7
+    - 8
+    - 1
+    - 'No'
+    - false
+    - "<div>● Manage and support daily operations (connections with suppliers, execution
+      of marketing plan, deliveries, platform testing, planning and execution to reach
+      company targets, etc.)<br>● Plan and manage events (tastings, co promotional
+      events, etc.)<br>● Take care of the operations before, during and after the
+      organization of the events.<br>● Support marketing activities<br>● Manage and
+      support the full processes of the online deal creation from the negotiation
+      with suppliers to the online release<br>● Finding new suppliers<br>● Finding
+      new partners for cooperation</div>"
+    - "<div>● Creativity<br>● Good communication skills, outgoing personality<br>●
+      Critical thinking<br>● Social person<br>● Proactive spirit<br>● Solution oriented<br>●
+      Energetic<br>● Time management and ability to work within tight deadlines<br>●
+      Well organised, ability to give reports on the job done<br>● Fluent English
+      and Chinese, good writing skills is preferred.<br>● F&amp;B Background preferred</div>"
+    - ''
+    - Open
+    - 3
+    - 2017-01-13 19:24:36.000000000 Z
+    - 2017-01-13 20:16:38.000000000 Z
+  - - 8
+    - Marketing and Business Development Intern - Food and Beverage
+    - Marketing
+    - ''
+    - Shanghai
+    - 7
+    - 8
+    - 1
+    - 'No'
+    - false
+    - "<div>● Plan for marketing activities and assist for the execution of the Marketing
+      Plan.<br>● Plan and manage events (tastings, copromotional events, etc.).<br>●
+      Take care of the operations before, during and after the organization of the
+      events.<br>● Create new concepts of events/promotions given the resources offered
+      by GroupMall.<br>● Producing detailed proposals for marketing activities (e.g.
+      timelines, legal obligations, staffing and budgets).<br>● Doing researches and
+      collecting data about the competition.<br>● Manage company social media platforms
+      and assist with the planning for user acquisition strategies.<br>● Help finding
+      new suppliers and support the ecommerce deal creation.<br>● Help finding new
+      partners for cooperation.</div>"
+    - "<div>● Creativity<br>● Good communication skills, outgoing personality<br>●
+      Critical thinking<br>● Social person<br>● Proactive spirit<br>● Solution oriented<br>●
+      Energetic<br>● Time management and ability to work within tight deadlines<br>●
+      Well organised, ability to give reports on the job done<br>● Fluent English
+      and Chinese, good writing skills is preferred.<br>● F&amp;B Background preferred</div>"
+    - ''
+    - Open
+    - 3
+    - 2017-01-13 19:30:44.000000000 Z
+    - 2017-01-13 19:30:44.000000000 Z
+  - - 9
+    - Marketing Intern
+    - Marketing
+    - ''
+    - Shanghai
+    - 8
+    - 9
+    - 1
+    - TBD
+    - false
+    - "<ul><li>Draft and send a Newsletter in English once every 2 months</li><li>Do
+      market research based on ad-hoc projects in English</li><li>Navigate the advanced
+      CRM system—Acton and explore the function of organizing webinars</li><li>Refine
+      the office templates and current brochures</li><li>Be an active social media
+      marketer, research and update company’s Linkedin and Twitter</li><li>Assist
+      in exhibitions and offline events</li><li>Update news on website</li></ul>"
+    - "<ul><li>Fluent in English, preferably a native English speaker</li><li>Master
+      good writing skills in English</li><li>Analytical and possess marketing sense</li><li>Master
+      Photoshop and/or Indesign</li><li>Speak and Understand basic Chinese will be
+      a plus, but not mandatory</li></ul>"
+    - "<div>The allowance will be based on the interns' skills &amp; experiences.</div>"
+    - Open
+    - 3
+    - 2017-01-13 19:38:34.000000000 Z
+    - 2017-01-13 19:38:34.000000000 Z
+  - - 10
+    - Financial Business Intern
+    - Finance
+    - ''
+    - Shanghai
+    - 9
+    - 11
+    - 1
+    - 'No'
+    - false
+    - "<div>- Research and analysis for consulting projects and investment deals,
+      including knowledge of basic financial and business principles&nbsp;<br>- Assist
+      with creation of professional, bilingual consulting reports&nbsp;<br>- Liaise
+      in both English &amp; Chinese with various project stakeholders, including clients
+      and internal teams&nbsp;<br>- Executive assistance to the Project Director as
+      needed, including potential travel&nbsp;<br>- Coordination of due diligence</div>"
+    - "<div>- Must have a finance background<br>- Ability to speak English and a least
+      conversational Chinese<br>- Chinese speakers preferred</div>"
+    - "<div>This company is currently looking for an intelligent, resourceful, and
+      fast-learning person to work in their growing number of projects. This person
+      will be responsible for playing key roles in the cases they take on, and should
+      have the tools to quickly assess business models and research potential markets,
+      competitors, and key statistics for businesses. This candidate should be able
+      to organize information effectively and create bilingual reports, as well as
+      assist with day-to-day administrative tasks in an efficient manner. As this
+      is a growing company, this position is ideally suited for someone who is looking
+      for a fast-paced and exiting work environment with ample opportunities to grow
+      professionally.<br><br>The allowance will be determined according to the candidate's
+      skills &amp; experiences.</div>"
+    - Open
+    - 4
+    - 2017-01-13 19:46:41.000000000 Z
+    - 2017-01-13 19:46:41.000000000 Z
+  - - 11
+    - Creative Design Internship
+    - Graphic Design
+    - ''
+    - Shanghai
+    - 10
+    - 12
+    - 1
+    - 'Yes'
+    - true
+    - "<div>- Prepare and assemble images and materials\r\n<br>- Develop creative
+      concepts for brand, including online projects\r\n<br>- Support in creating and
+      designing websites\r\n<br>- Produce/design and update materials for projects</div>"
+    - "<div>-Advanced computer skills in Microsoft office suite and design software
+      such as AutoCAD, Photoshop, CorelDraw, Adobe Illustrator\r\n<br>- Creativity
+      and enthusiasm, interns should be imaginative in selecting furnishings and fabrics
+      and in creating spaces that serve the client ’s needs and fit the client’s lifestyle\r\n<br>-
+      Good interpersonal and organization skills in order to be able to communicate
+      effectively with clients and collaborating with other designers on ongoing projects\r\n<br>-
+      Excellent problem-solving skills that will assist in addressing challenges,
+      such as the high cost or sudden unavailability of selected materials, while
+      keeping the project on time and within budget.</div>"
+    - "<div>- Allowance, commissions &amp; accommodation discount\r\n<br>- Potential
+      future career opportunities\r\n<br>- Insight into different Chinese markets</div>"
+    - Open
+    - 1
+    - 2017-01-13 20:01:39.000000000 Z
+    - 2017-01-13 20:01:39.000000000 Z
+  - - 12
+    - Customer Service Internship
+    - Hospitality
+    - ''
+    - Shanghai
+    - 10
+    - 12
+    - 1
+    - 'Yes '
+    - true
+    - "<div>- Professionally handle incoming requests from customers and ensure that
+      issues are resolved both promptly and thoroughly. Thoroughly and efficiently
+      gather customer information, access and fulfill customer needs,\r\n<br>- Provide
+      quality service and support in a variety of areas including, but not limited
+      to: billing, placing print orders, and system troubleshooting.\r\n<br>- Maintain
+      a balance between company policy and customer benefit in decision making.\r\n<br>-
+      Handle issues in the best interest of both customer and company.\r\n<br>- Continuously
+      evaluate and identify opportunities to drive process improvements that positively
+      impact the customer’s experience.</div>"
+    - "<div>- Highly developed sense of integrity and commitment to customer satisfaction.\r\n<br>-
+      Demonstrated passion for excellence with respect to treating and caring for
+      customers.\r\n<br>- Ability to communicate clearly and professionally, both
+      verbally and in writing.\r\n<br>- Has a pleasant, patient and friendly attitude.\r\n<br>-
+      Strong decision making and analytical abilities.\r\n<br>- Strong detail orientation
+      and communication/listening skills.\r\n<br>- Willingness to work a flexible
+      schedule and occasional overtime when needed.\r\n<br>- Possess a strong work
+      ethic and team player mentality.</div>"
+    - "<div>- Allowance, commissions &amp; accommodation discount\r\n<br>- Potential
+      future career opportunities\r\n<br>- Insight into different Chinese markets</div>"
+    - Open
+    - 1
+    - 2017-01-13 20:03:39.000000000 Z
+    - 2017-01-13 20:03:39.000000000 Z
+  - - 13
+    - Human Resources Internship
+    - Human Ressoures
+    - ''
+    - Shanghai
+    - 10
+    - 12
+    - 1
+    - 'Yes'
+    - true
+    - "<div>- Identify staff vacancies and recruit, interview and select applicants\r\n<br>-
+      Allocate human resources, ensuring appropriate matches\r\n<br>- Provide current
+      and prospective employees with information about job duties and working conditions\r\n<br>-
+      Serve as a link between management and employees by helping resolve work -related
+      problems\r\n<br>- Implement strategic organizational change to increase productivity</div>"
+    - "<div>- Excellent computer skills in a Microsoft Windows environment. Must include
+      Excel and skills in database management and record keeping\r\n<br>- Excellent
+      interpersonal and coaching skills to form effective working relationships with
+      people at all levels\r\n<br>- Organizational skills and the ability to understand
+      detailed information\r\n<br>- Written and verbal communication is an essential
+      skill\r\n<br>- Problem solving and conflict management skills</div>"
+    - "<div>- Allowance, commissions &amp; accommodation discount\r\n<br>- Potential
+      future career opportunities\r\n<br>- Insight into different Chinese markets</div>"
+    - Open
+    - 1
+    - 2017-01-13 20:05:44.000000000 Z
+    - 2017-01-13 20:05:44.000000000 Z
+  - - 14
+    - Interior Design Internship
+    - Architecture
+    - ''
+    - Shanghai
+    - 10
+    - 12
+    - 1
+    - 'Yes'
+    - true
+    - "<div>- Estimate material requirements and costs, present design to client for
+      approval\r\n<br>- Confer with client to determine factors affecting planning
+      interior environments\r\n<br>- Advise client on interior design factors, such
+      as space planning, layout and utilization of furnishings and equipment, and
+      color coordination\r\n<br>- Select or design, and purchase furnishings, art
+      works, and accessories\r\n<br>- Render design ideas in form of paste-ups or
+      drawings</div>"
+    - "<div>- Advanced computer skills in Microsoft Office Suite and design software
+      such as AutoCAD, Photoshop, CorelDraw, Adobe Illustrator.\r\n<br>- Artistic
+      ability in using the sense of style, developing designs that look great and
+      are aesthetically appealing.\r\n<br>- Creativity and enthusiasm, interns should
+      be imaginative in selecting furnishings and fabrics and in creating spaces that
+      serve the client’s needs and fit the client’s lifestyle.\r\n<br>- Good Interpersonal
+      and Organization skills in order to be able to communicate effectively with
+      clients and collaborating with other designers on ongoing projects.\r\n<br>-
+      Excellent problem-solving skills that will assist in addressing challenges,
+      such as the high cost or sudden unavailability of selected materials, while
+      keeping the project on time and within budget</div>"
+    - "<div>- Allowance, commissions &amp; accommodation discount\r\n<br>- Potential
+      future career opportunities\r\n<br>- Insight into different Chinese markets</div>"
+    - Open
+    - 1
+    - 2017-01-13 20:06:54.000000000 Z
+    - 2017-01-13 20:06:54.000000000 Z
+  - - 15
+    - Information Technology Internship
+    - IT & Web
+    - ''
+    - Shanghai
+    - 10
+    - 12
+    - 1
+    - 'Yes'
+    - true
+    - "<div>- Computer system and printer network area maintenance\r\n<br>- Project
+      assigned by IT manager\r\n<br>- Administrative support, hardware troubleshooting
+      and maintenance, install and configure new hardware, software and backup of
+      daily data, dealing with servers\r\n<br>- Set up and program a NAV Dynamics
+      ERP system, program website, support the company’s internal IT Hardware and
+      servers</div>"
+    - "<div>- Have an interest of information technologies, keep updated with the
+      latest trends in the industry\r\n<br>- General understanding of hardware and
+      software, trouble-shooting\r\n<br>- Familiar with Administration with the Microsoft
+      systems and servers and Network Technology\r\n<br>- Coding skills and powershell
+      vbs\r\n<br>- Strong communication skills, ability to assist the employers from
+      different departments who have PC problems as required</div>"
+    - "<div>- Allowance, commissions &amp; accommodation discount\r\n<br>- Potential
+      future career opportunities\r\n<br>- Insight into different Chinese markets</div>"
+    - Open
+    - 1
+    - 2017-01-13 20:07:52.000000000 Z
+    - 2017-01-13 20:07:52.000000000 Z
+  - - 16
+    - Sales Internship
+    - Sales
+    - ''
+    - Shanghai
+    - 10
+    - 12
+    - 1
+    - 'Yes'
+    - true
+    - "<div>- Ability to develop interpersonal relationships. Written and verbal skills
+      are vital in dealing with individuals as well as groups\r\n<br>- Promote sales
+      through advertisements, open houses and listing service\r\n<br>- Compare residential
+      and commercial properties with similar properties to determine fair market price\r\n<br>-
+      Maintain and update the data base and internet based marketing tools\r\n<br>-
+      Discuss cost of maintaining the properties and possible renovations with the
+      customers\r\n<br>- Communicate and follow up with other related departments
+      to ensure all necessary maintenance needs are done\r\n<br>- Prepare leasing
+      agreements and ensure all paperwork is properly filled out</div>"
+    - "<div>- University degree in Communication, Marketing, Management or a related
+      field\r\n<br>- Fluency in English is a must. Knowledge of mandarin will be a
+      distinctive advantage\r\n<br>- Preference will be given to candidates with relevant
+      experience and skills\r\n<br>- Good communications and interpersonal skills
+      is essential\r\n<br>- Pleasant personality with a can do attitude</div>"
+    - "<div>- Allowance, commissions &amp; accommodation discount\r\n<br>- Potential
+      future career opportunities\r\n<br>- Insight into different Chinese markets</div>"
+    - Open
+    - 1
+    - 2017-01-13 20:08:55.000000000 Z
+    - 2017-01-13 20:08:55.000000000 Z
+
+---
+users:
+  columns:
+  - id
+  - name
+  - email
+  - password_digest
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Bastien
+    - bastien.dumont@integratechineselife.com
+    - "$2a$10$zyTMatgTb9SNwOpjYhqSX.TTqCJYXB3EXUQkF2Ivkipys3B/Iv2RO"
+    - 2017-01-09 16:34:13.000000000 Z
+    - 2017-01-16 09:07:30.000000000 Z
+  - - 2
+    - Nico
+    - nicolas.de.toledo@integratechineselife.com
+    - "$2a$10$DtGqdj8Itk0KVc40Bnts7Of6QckWq32CvRqPNZzDphOQdUpt3uRqu"
+    - 2017-01-13 18:28:58.000000000 Z
+    - 2017-01-13 18:30:31.000000000 Z
+  - - 3
+    - Hutong
+    - info@hutong-school.com
+    - "$2a$10$SxAkX8iSiJeYnfRlalHEAOjsnzFpRABdHFIFjgaQ7ajynVJIrxxZu"
+    - 2017-01-13 19:27:24.000000000 Z
+    - 2017-01-13 19:27:24.000000000 Z
+  - - 4
+    - Patrick
+    - patrick@integratechineselife.com
+    - "$2a$10$lF/8FTLDIyRtuCSS9QHTZOQpaiOC6C7uCkiNIEF3ws9ugjsn8CGMm"
+    - 2017-01-13 19:43:50.000000000 Z
+    - 2017-01-13 19:43:50.000000000 Z
