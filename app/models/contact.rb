@@ -40,4 +40,27 @@ def self.options_for_select
     order('LOWER(name)').map { |e| [e.name, e.id] }
 end
 
+def self.as_csv
+  CSV.generate do |csv|
+    csv << column_names
+    all.each do |item|
+      csv << item.attributes.values_at(*column_names)
+    end
+  end
+end
+
+ def self.import(file)
+    CSV.foreach(file.path, headers: true) do |row|
+
+      contact_hash = row.to_hash # exclude the price field
+      contact = Contact.where(id: contact_hash["id"])
+
+      if contact.count == 1
+        contact.first.update_attributes(contact_hash)
+      else
+        Contact.create!(contact_hash)
+      end # end if !product.nil?
+    end # end CSV.foreach
+  end # end self.import(file)
+  
 end

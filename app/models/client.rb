@@ -50,4 +50,27 @@ scope :sorted_by, lambda { |sort_option|
     ]
   end
 
+def self.as_csv
+  CSV.generate do |csv|
+    csv << column_names
+    all.each do |item|
+      csv << item.attributes.values_at(*column_names)
+    end
+  end
+end
+
+ def self.import(file)
+    CSV.foreach(file.path, headers: true) do |row|
+
+      client_hash = row.to_hash # exclude the price field
+      client = Client.where(id: client_hash["id"])
+
+      if client.count == 1
+        client.first.update_attributes(client_hash)
+      else
+        Client.create!(client_hash)
+      end # end if !product.nil?
+    end # end CSV.foreach
+  end # end self.import(file)
+
 end

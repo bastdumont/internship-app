@@ -29,9 +29,14 @@ class PositionsController < ApplicationController
     respond_to do |format|
       format.html
       format.js
+      format.csv { send_data @positions.as_csv }
     end
   end
-
+  
+  def import
+    Position.import(params[:file])
+    redirect_to root_url, notice: "Positions imported."
+  end
   # GET /positions/1
   # GET /positions/1.json
   def show

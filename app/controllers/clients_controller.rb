@@ -26,6 +26,7 @@ class ClientsController < ApplicationController
     respond_to do |format|
       format.html
       format.js
+      format.csv { send_data @clients.as_csv }
     end
 
   # Recover from invalid param sets, e.g., when a filter refers to the
@@ -39,6 +40,12 @@ class ClientsController < ApplicationController
 
   # GET /clients/1
   # GET /clients/1.json
+  
+   def import
+    Client.import(params[:file])
+    redirect_to root_url, notice: "Clients imported."
+  end
+  
   def show
   end
 

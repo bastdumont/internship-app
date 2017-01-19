@@ -25,6 +25,7 @@ class ContactsController < ApplicationController
     respond_to do |format|
       format.html
       format.js
+       format.csv { send_data @contacts.as_csv }
     end
 
   # Recover from invalid param sets, e.g., when a filter refers to the
@@ -36,7 +37,10 @@ class ContactsController < ApplicationController
     redirect_to(reset_filterrific_url(format: :html)) and return
   end
 
-
+ def import
+    Contact.import(params[:file])
+    redirect_to root_url, notice: "Contacts imported."
+  end
   # GET /contacts/1
   # GET /contacts/1.json
   def show

@@ -26,9 +26,15 @@ class CompaniesController < ApplicationController
     respond_to do |format|
       format.html
       format.js
+      format.csv { send_data @companies.as_csv }
     end
   end
 
+ def import
+    Company.import(params[:file])
+    redirect_to root_url, notice: "Companies imported."
+  end
+  
   # GET /companies/1
   # GET /companies/1.json
   def show

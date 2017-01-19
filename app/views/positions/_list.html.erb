@@ -9,7 +9,6 @@
       <th>ID</th>
       <th>Name</th>
       <th>Area of interest</th>
-      <th>Link</th>
       <th>City</th>
       <th>Company</th>
       <th>Contact</th>
@@ -28,7 +27,6 @@
         <td><%= position.id %></td>
         <td><%= link_to(position.name.truncate(20), position) %></td>
         <td><%= position.area_of_interest %></td>
-        <td><%= link_to position.link.truncate(15), "http://#{position.link}" %></td>
         <td><%= position.city %></td>
         <td><%= link_to(position.company.name, position.company) %></td>
         <td><%= link_to(position.contact.name, position.contact) %></td>
@@ -44,4 +42,12 @@
     <% end %>
   </tbody>
 </table>
-<%= will_paginate positions %>
+
+<h3>Import a CSV File</h3>
+  <%= form_tag import_positions_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import CSV" %>
+      <% end %>
+ <%= will_paginate positions %>
+
+ 

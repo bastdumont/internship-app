@@ -25,7 +25,7 @@
         <td><%= company.status %></td>
         <td><%= link_to company.website, "http://#{company.website}" %></td>
         <td><%= company.city %></td>
-        <td><%= company.adress.truncate(27) %></td>
+        <td><%= company.adress %></td>
         <td><%= link_to 'Show', company %></td>
         <td><%= link_to 'Edit', edit_company_path(company) %></td>
         <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -33,4 +33,10 @@
     <% end %>
   </tbody>
 </table>
+
+<h3>Import a CSV File</h3>
+  <%= form_tag import_companies_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import CSV" %>
+      <% end %>
 <%= will_paginate companies %>

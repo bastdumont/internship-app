@@ -5,10 +5,18 @@ Rails.application.routes.draw do
   get 'access/logout'
   get 'access/attempt_login'
   post 'access/attempt_login'
-  resources :positions
-  resources :companies
-  resources :contacts
-  resources :clients
+  resources :positions do
+    collection { post :import }
+  end
+  resources :companies do
+    collection { post :import }
+  end
+  resources :contacts do
+    collection { post :import }
+  end
+  resources :clients do
+    collection { post :import }
+  end
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
